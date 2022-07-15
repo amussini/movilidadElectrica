@@ -21,15 +21,7 @@ h1,h2{
 
 
 nav{
-    background: linear-gradient(to right, green, black);
-    width: 100vw;
-    position: sticky;
-    padding-left: 30px;
-    top: 0;
-    z-index: 3;
-    border: 2px solid #000;
-    display: flex;
-    justify-content: space-between;
+    background: linear-gradient(to left, green, black);  
 }
 
         
@@ -38,26 +30,26 @@ nav{
     height: 3.5rem;   
 }        
 
-        nav ul{
-            display: flex;
-            padding-right: 40px;
-            padding-bottom: 10px;
-            align-items: flex-end;      
-        }
-
-
-            nav ul li{
-                display: inline-block;
+            .nav-item{
                 margin-right: 20px;        
             }
 
 
-            nav ul li a{
+            .nav-link{
                 color: #fff;
                 font-family: roboto, sans-serif;
                 font-weight: 500;
-                font-size: small;
+                font-size: medium;
                 text-decoration: none;
+            }
+
+            .nav-link:hover{
+                color: #888;
+            }
+
+            .btn-outline-success{
+                background-color: #888;
+                color: #000;
             }
             
             
@@ -79,10 +71,6 @@ nav{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 60px 0;
     gap: 2em; 
-}
-
-article{
-    box-shadow: 5px 5px 10px #000;
 }
 
 .container__img{
@@ -109,12 +97,14 @@ article{
     border-radius:  1em 1em 0 0 ;
 }
 
-
-article p{
+.container__text--design{
     font-family: roboto, sans-serif;
     font-size: 1.1rem;
     line-height: 2rem;
-    font-weight: 300;
+    font-weight: 500;
+    color: #fff;
+    padding: 1em;
+    
 }
 
 
@@ -124,7 +114,9 @@ article p{
         height: auto;
         margin: 10PX 10px;
         border-radius: 1em 1em;
-        transition: transform 1s;   
+        transition: transform 1s; 
+        box-shadow: 5px 5px 10px #000
+          
     }
 
     .container__text:hover{
@@ -143,14 +135,6 @@ article p{
                    text-align: center;
                    padding: 1em;   
                }
-
-
-               .container__text--design{
-                       font-weight: 500;
-                       color: #fff;
-                       padding: 1em;
-               }
-
 
 .foot{
    text-align: left;
@@ -188,34 +172,6 @@ article p{
 }
 
 @media (max-width: 720px){
-    nav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-    }
-
-    nav ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;    
-    }
-
-    nav ul li{
-        padding: 0.2em;
-        padding-top: 0;
-    }
-
-    .nav__img--sm{
-          width: 4em;
-          height: 4em;
-          padding-right: 4em;   
-    }
-
-    .home{
-        display: none;
-    }
-
     header{
         display: flex;
         justify-content: center; 
@@ -231,7 +187,7 @@ article p{
         margin: 0 auto;
     }
 
-    article{
+    .container__text{
         box-shadow: none;
     }
 
@@ -243,8 +199,7 @@ article p{
     }
 
     article div{
-        display: none;
-        
+        display: none;    
     }
 
     .container__text--design{
@@ -267,82 +222,27 @@ article p{
 
 
 .galeria__headimg--fluid{
-    width: 100vw;
-    height: 70vh;
+    width: 90vw;
+    height: 80vh;
+   
 }
-
 
 .title__container{
-    font-size: 2em;
-    font-weight: 500;
     display: flex;
     justify-content: center;
-    padding-bottom: 40px; 
+    padding: 4em 0; 
 }
 
-
 .container__text--color{
+    font-size: 4em;
+    font-weight: 600;
     color: #000;
     text-shadow: 5px 5px 10px #444;
 }
 
-.galeriaimg__container{
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(2 1fr);
-    grid-template-areas: 
-    " electrico1 electrico2"
-    " electrico3 electrico4"
-    " electrico5 electrico6";
-    gap: 2em;
-    margin: auto;    
-}
-
-.galeriaimg__container img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    box-shadow: 5px 5px 10px #000;
-}
-
-.auto1:hover{
-    transform: scale(1.1);
-    border: 5px solid #fff;   
-}
-
-.auto2:hover{
-    transform: scale(1.1);
-    border: 5px solid #fff;   
-}
-
-.auto3:hover{
-    transform: scale(1.1); 
-    border: 5px solid #fff;  
-}
-
-.auto4:hover{
-    transform: scale(1.1);
-    border: 5px solid #fff;   
-}
-
-.auto5:hover{
-    transform: scale(1.1);
-    border: 5px solid #fff;   
-}
-
-.auto6:hover{
-    transform: scale(1.1);
-    border: 5px solid #fff;   
-}
-
 @media (max-width: 720px){
-    .galeriaimg__container{
-        display: flex;
-        flex-direction: column;
-    }
-
     .container__text--color{
-        font-size: 100%;   
+        font-size: 2em;   
     }
 
     .galeria__headimg--fluid{
@@ -383,29 +283,13 @@ article p{
 }
 
 @media (max-width: 720px){
-    .container__table{
-        overflow: auto;
-        background-color: transparent;
-        font-size: small;
-        width: 100vw;       
-    }
-
     .producto{
-        background-color: #000;  
-    }
-
-    .container{
-        width: 100%;
+        background-color: #000;
+        overflow-x: auto;  
     }
 
     .producto__text{
         color: #fff;
-    }
-
-    td:first-child{
-        position: absolute;
-        background-color: #000;
-        padding-right: 20px;     
     }
 }
 
@@ -539,58 +423,18 @@ article p{
 }
 
 
-        .form__ia{
-            display: inline-block; 
-            background-color: #aaa;
-            padding: 10px;
-            border: 3px solid #000;   
-        }
-
-
-        .form__nya{
-            height: 100%;
-            font-weight: 700;
-            margin-right: 10px;         
-        }
-
-        .form__email{
-            font-weight: 700;
-            margin-right: 98px;
-        }
-
-
-        .form__nya--size{
-           margin-bottom: 10px;
-           margin-top: 10px;
-        }
-
-
-        fieldset{
-            padding: 20px 0;
-            margin: 20px 0;
-        }
-
-
-        .form__comentario{
-            padding: 20px;
-            font-weight: 700;
-        }
-
-
-        .form__textarea{
-            margin: 10px;
-        }
-
-
 section{
     display: flex;
     justify-content: space-around;
 }
 
+iframe{
+    padding-left: 1em;
+}
 
 @media (max-width: 720px){
     .ia__title{
-        background-color: transparent
+        background-color: transparent;
     }
 
     .ia__img{
@@ -600,7 +444,7 @@ section{
     iframe{
         width: 80vw;
         height: 30vh;
-        padding-top: 1em;
+        padding-top: 1em;  
     }
 
     .ia__section{
