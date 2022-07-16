@@ -310,99 +310,11 @@ nav{
 }
 
 
-.beneficios{
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
-    gap: 1em;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
-    align-items: center;
-    grid-template-areas: 
-    "card1 card5 card3"
-    "card4 card2 card6";
-}
-
-
-.beneficios__items{
-    height: auto;
-    padding: 2em;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 2px 2px 5px #000;
-    background-color: #aaa;
-}
-
-.beneficios__items:nth-of-type(1){
-    grid-area: card1; 
-    background-color: #444;
-    color: #ddd;
-      
-}
-
-.beneficios__items:nth-of-type(2){
-    grid-area: card2; 
-    background-color: #444;
-    color: #ddd;
-}
-
-.beneficios__items:nth-of-type(3){
-    grid-area: card3; 
-    background-color: #444;
-    color: #ddd;
-}
-
-.beneficios__items:nth-of-type(4){
-    grid-area: card4;
-    display: flex;
-    flex-direction: row-reverse   
-}
-
-.beneficios__items:nth-of-type(4):hover{
-    transform: translate(-15px);
-}
-
-.beneficios__items:nth-of-type(5):hover{
-    grid-area: card5;
-    transform: translateY(-15px);
-     
-}
-
-.beneficios__items:nth-of-type(6){
-    grid-area: card6;
-    display: flex;
-    flex-direction: row;  
-}
-
-.beneficios__items:nth-of-type(6):hover{
-    transform: translate(15px);
-    
-}
-
-
-.beneficios__figure img{
-   width: 10vw;
-}
-
 @media (max-width: 720px){
     .img__header{
         width: 80vw;
         padding-top: 1em;
-    }
-    
-    .beneficios{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .beneficios__items{
-        height: auto;
-    }
-
-    figure img{
-        display: none;
-    }   
+    }     
 }
 
 
