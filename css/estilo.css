@@ -21,7 +21,16 @@ h1,h2{
 
 
 nav{
-    background: linear-gradient(to left, green, black);  
+    background: linear-gradient(to left, green, black);
+    
+    
+}
+
+.navbar{
+    position: sticky;
+    top:0;
+    z-index: 2;
+    
 }
 
         
@@ -75,7 +84,7 @@ nav{
 
 .container__img{
     background-image: url(../imagenes/card1.jpg);
-    height: 200px;
+    height: 12.5em;
     background-position: center top;
     background-size: cover;
     border-radius:  1em 1em 0 0 ;
@@ -83,7 +92,7 @@ nav{
 
 .container__img--1{
     background-image: url(../imagenes/card2.jpg);
-    height: 200px;
+    height: 12.5em;
     background-position: center top;
     background-size: cover;
     border-radius:  1em 1em 0 0 ;
@@ -91,7 +100,7 @@ nav{
 
 .container__img--2{
     background-image: url(../imagenes/card3.jpg);
-    height: 200px;
+    height: 12.5em;
     background-position: center top;
     background-size: cover;
     border-radius:  1em 1em 0 0 ;
@@ -196,10 +205,6 @@ nav{
         margin: 0 auto;
         border-radius: 0;
         background-color: transparent;     
-    }
-
-    article div{
-        display: none;    
     }
 
     .container__text--design{
