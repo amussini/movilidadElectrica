@@ -17,20 +17,16 @@ h1,h2{
 }
 
 nav{
-    background: linear-gradient(to left, $mainColor, $black);
-    
-    
+    background: linear-gradient(to left, $mainColor, $black);   
 }
 
 .navbar{
     position: -webkit-sticky;
     position: sticky;
     top:0;
-    z-index: 2;
-    
+    z-index: 2;   
 }
-
-        
+       
 .nav__img--sm{
     width: $textLg;
     height: $textLg;   
