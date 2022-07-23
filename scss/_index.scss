@@ -1,0 +1,219 @@
+// Index
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../imagenes/fondo.jpg);
+    background-size: cover;   
+    overflow-x: hidden;
+}
+
+h1,h2{
+    font-family: $secondaryColor;
+    color: $secondaryColor;   
+}
+
+nav{
+    background: linear-gradient(to left, $mainColor, $black);
+    
+    
+}
+
+.navbar{
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index: 2;
+    
+}
+
+        
+.nav__img--sm{
+    width: $textLg;
+    height: $textLg;   
+}        
+
+            .nav-item{
+                margin-right: 1em;        
+            }
+
+
+            .nav-link{
+                color: $white;
+                font-family: $fontMain;
+                font-weight: $textRegular;
+                font-size: medium;
+                text-decoration: none;
+            }
+
+            .nav-link:hover{
+                color: $linkColor;
+            }
+
+            .btn-outline-success{
+                background-color: $linkColor;
+                color: $black;
+            }
+            
+            
+
+.head__img--short{
+    width: $w-50;
+    z-index: 1;  
+}
+
+.head{
+    display: flex;
+    width: $w-100;
+    flex-direction: row;
+}
+
+.container{
+    width: $w-90;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 60px 0;
+    gap: 2em; 
+}
+
+.container__img{
+    background-image: url(../imagenes/card1.jpg);
+    height: $imgLg;
+    background-position: center top;
+    background-size: cover;
+    border-radius:  1em 1em 0 0 ;
+}
+
+.container__img--1{
+    background-image: url(../imagenes/card2.jpg);
+    height: $imgLg;
+    background-position: center top;
+    background-size: cover;
+    border-radius:  1em 1em 0 0 ;
+}
+
+.container__img--2{
+    background-image: url(../imagenes/card3.jpg);
+    height: $imgLg;
+    background-position: center top;
+    background-size: cover;
+    border-radius:  1em 1em 0 0 ;
+}
+
+.container__text--design{
+    font-family: $fontMain;
+    font-size: 1.1rem;
+    line-height: $textMd;
+    font-weight: $textRegular;
+    color: $white;
+    padding: 1em;
+    
+}
+
+
+    .container__text{
+        background-color: $cardColor;
+        width: $w-90;
+        height: auto;
+        margin: 10PX 10px;
+        border-radius: 1em 1em;
+        transition: transform 1s; 
+        box-shadow: 5px 5px 10px $black;     
+    }
+
+    .container__text:hover{
+        transform: scale(1.1);
+    }
+
+
+           .container__title{
+               text-align: left;
+               padding: 1em;
+           }
+
+
+               .container__title--size{
+                   font-size: xx-large;
+                   text-align: center;
+                   padding: 1em;   
+               }
+
+.foot{
+   text-align: left;
+   display: flex;
+   padding-top: 50px;
+}
+
+
+.foot__img{
+    width: 30px;
+    padding: 5px;      
+}
+
+
+.foot__copy{
+    color: $black;
+    text-align: end;
+    width: $w-100;
+    padding: 20px;
+    font-size: large;    
+}
+
+@keyframes animate__pto{
+    0%{filter: brightness(.5);}
+    25%{filter: brightness(1);}
+    50%{filter: brightness(1.5);}
+    75%{filter: brightness(1);}
+    100%{filter: brightness(.5);}
+}
+
+.animate{
+    animation-name: animate__pto;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+@media (max-width: 720px){
+    header{
+        display: flex;
+        justify-content: center; 
+    }
+
+    .head__img--short{
+        padding-top: 2em;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .container__text{
+        box-shadow: none;
+    }
+
+    .container__text{   
+        font-size: small;
+        margin: 0 auto;
+        border-radius: 0;
+        background-color: transparent;     
+    }
+
+    .container__text--design{
+        font-size: 1em;
+        color: $black;
+        font-weight: $textRegular;
+    }
+
+    .container__title--size{
+        color: $black;
+    }
+
+    .container__title{
+        color: $black;
+    }
+}

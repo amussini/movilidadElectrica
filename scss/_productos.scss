@@ -1,0 +1,40 @@
+// Productos
+
+.producto__text{
+    text-align: center;
+    color: $black;
+    padding-top: 1em;
+    font-size: $textLg;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: $w-100;    
+}
+
+.container__table{
+    background-color: $tableColor;
+    width: 700px;
+    font-weight: $textRegular;
+    display: flex;
+    justify-content:center;
+    color: $white;            
+}
+
+.info__producto{
+    color: $mainColor;
+    text-transform: uppercase;
+    text-decoration: underline;    
+}
+
+@media (max-width: 720px){
+    .producto{
+        background-color: $black;
+        overflow-x: auto;  
+    }
+
+    .producto__text{
+        color: $white;
+    }
+}
