@@ -169,7 +169,7 @@ nav {
 .animate {
   animation-name: animate__pto;
   animation-iteration-count: infinite;
-  animation-duration: 10s;
+  animation-duration: 5s;
 }
 
 @media (max-width: 720px) {
