@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(../imagenes/fondo.jpg);
+  background-image: url(../imagenes/fondo.webp);
   background-size: cover;
   overflow-x: hidden;
 }
@@ -73,7 +73,7 @@ nav {
 }
 
 .container__img {
-  background-image: url(../imagenes/card1.jpg);
+  background-image: url(../imagenes/pag-index/card1.webp);
   height: 12.5em;
   background-position: center top;
   background-size: cover;
@@ -81,7 +81,7 @@ nav {
 }
 
 .container__img--1 {
-  background-image: url(../imagenes/card2.jpg);
+  background-image: url(../imagenes/pag-index/card2.webp);
   height: 12.5em;
   background-position: center top;
   background-size: cover;
@@ -89,7 +89,7 @@ nav {
 }
 
 .container__img--2 {
-  background-image: url(../imagenes/card3.jpg);
+  background-image: url(../imagenes/pag-index/card3.webp);
   height: 12.5em;
   background-position: center top;
   background-size: cover;
