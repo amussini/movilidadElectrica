@@ -76,27 +76,24 @@ nav{
 }
 
 .container__img{
-    background-image: url(../imagenes/pag-index/card1.webp);
     height: $imgLg;
     background-position: center top;
     background-size: cover;
     border-radius:  1em 1em 0 0 ;
+}
+
+.container__img{
+    background-image: url(../imagenes/pag-index/card1.webp);
 }
 
 .container__img--1{
+    @extend .container__img;
     background-image: url(../imagenes/pag-index/card2.webp);
-    height: $imgLg;
-    background-position: center top;
-    background-size: cover;
-    border-radius:  1em 1em 0 0 ;
 }
 
 .container__img--2{
+    @extend .container__img;
     background-image: url(../imagenes/pag-index/card3.webp);
-    height: $imgLg;
-    background-position: center top;
-    background-size: cover;
-    border-radius:  1em 1em 0 0 ;
 }
 
 .container__text--design{
@@ -109,15 +106,8 @@ nav{
     
 }
 
-
     .container__text{
-        background-color: $cardColor;
-        width: $w-90;
-        height: auto;
-        margin: 10PX 10px;
-        border-radius: 1em 1em;
-        transition: transform 1s; 
-        box-shadow: 5px 5px 10px $black;     
+       @include cards(auto, 10px 10px, 1em 1em)     
     }
 
     .container__text:hover{
@@ -126,19 +116,19 @@ nav{
 
 
            .container__title{
-               text-align: left;
+               text-align: map-get($map:$orientacion, $key:'1');
                padding: 1em;
            }
 
 
                .container__title--size{
                    font-size: xx-large;
-                   text-align: center;
+                   text-align: map-get($map:$orientacion, $key:'2');
                    padding: 1em;   
                }
 
 .foot{
-   text-align: left;
+   text-align: map-get($map: $orientacion, $key: '1');
    display: flex;
    padding-top: 50px;
 }
@@ -175,7 +165,7 @@ nav{
 @media (max-width: 720px){
     header{
         display: flex;
-        justify-content: center; 
+        justify-content: map-get($map: $orientacion, $key: '2'); 
     }
 
     .head__img--short{

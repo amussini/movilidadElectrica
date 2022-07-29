@@ -1,0 +1,11 @@
+//mixins
+
+@mixin cards($height, $margin, $border-radius) {
+    background-color: $cardColor;
+    width: $w-90;
+    height: $height;
+    margin: $margin;
+    border-radius: $border-radius;
+    transition: transform 1s; 
+    box-shadow: 5px 5px 10px $black;
+}
