@@ -1,10 +1,7 @@
 // Productos
 
 .producto__text{
-    text-align: center;
-    color: $black;
-    padding-top: 1em;
-    font-size: $textLg;
+    @include title()
 }
 
 .container{

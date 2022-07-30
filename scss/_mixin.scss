@@ -9,3 +9,11 @@
     transition: transform 1s; 
     box-shadow: 5px 5px 10px $black;
 }
+
+@mixin title(){
+    text-align: center;
+    color: $black;
+    padding: 1em 0;
+    font-size: $textXlg;
+    font-weight: $textRegular;
+}

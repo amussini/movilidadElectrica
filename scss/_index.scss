@@ -54,11 +54,23 @@ nav{
                 color: $black;
             }
             
-            
+         
 
 .head__img--short{
     width: $w-50;
     z-index: 1;  
+}
+
+.titulo{
+    display: flex; 
+}
+
+.titulo__texto{
+    font-size: $textXlg;
+    margin: auto;
+    color: $black;
+    font-weight: $textBold;
+    text-shadow: 2px 2px 5px $black;
 }
 
 .head{
@@ -170,6 +182,10 @@ nav{
 
     .head__img--short{
         padding-top: 2em;
+    }
+
+    .titulo{
+        display: none;
     }
 
     .container{

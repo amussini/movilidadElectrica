@@ -12,10 +12,7 @@
 }
 
 .container__text--color{
-    font-size: 4em;
-    font-weight: $textRegular;
-    color: $black;
-    text-shadow: 5px 5px 10px $textColor;
+    @include title()
 }
 
 @media (max-width: 720px){

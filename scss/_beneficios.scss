@@ -1,11 +1,7 @@
 //Beneficios
 
 .title__beneficios{
-    padding: 60px;
-    text-align: center;
-    color: $black;
-    font-weight: $textRegular;
-    text-shadow: 5px 5px 5px $linkColor;
+    @include title()
 }
 
 .beneficios__title{

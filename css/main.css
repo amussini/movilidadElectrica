@@ -58,6 +58,18 @@ nav {
   z-index: 1;
 }
 
+.titulo {
+  display: flex;
+}
+
+.titulo__texto {
+  font-size: 4em;
+  margin: auto;
+  color: #222;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px #222;
+}
+
 .head {
   display: flex;
   width: 100vw;
@@ -175,6 +187,9 @@ nav {
   .head__img--short {
     padding-top: 2em;
   }
+  .titulo {
+    display: none;
+  }
   .container {
     display: flex;
     flex-direction: column;
@@ -213,10 +228,11 @@ nav {
 }
 
 .container__text--color {
+  text-align: center;
+  color: #222;
+  padding: 1em 0;
   font-size: 4em;
   font-weight: 500;
-  color: #222;
-  text-shadow: 5px 5px 10px #444;
 }
 
 @media (max-width: 720px) {
@@ -256,8 +272,9 @@ nav {
 .producto__text {
   text-align: center;
   color: #222;
-  padding-top: 1em;
-  font-size: 3.5em;
+  padding: 1em 0;
+  font-size: 4em;
+  font-weight: 500;
 }
 
 .container {
@@ -291,11 +308,11 @@ nav {
   }
 }
 .title__beneficios {
-  padding: 60px;
   text-align: center;
   color: #222;
+  padding: 1em 0;
+  font-size: 4em;
   font-weight: 500;
-  text-shadow: 5px 5px 5px #888;
 }
 
 .beneficios__title {
