@@ -6,10 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Galeria de imágenes, vemos los modelos de autos eléctricos disponibles">
 	<meta name="keywords" content="autos electricos, galeria, proyecto 2022">
-	<meta name="author" content="Alvaro Mussini">
+	<meta name="author" content="Alvaro Mussini"> 
 	<link rel="icon" href="../imagenes/rayo.ico">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/main.css">
+	<script src="https://kit.fontawesome.com/4e1b675f1e.js" crossorigin="anonymous"></script>
 	<title>Movilidad Eléctrica - Galeria de imagenes</title>
 </head>
 <body>
@@ -50,57 +51,72 @@
 
 	<!--termina la nav-->
 
-	<header>
-		<img class="galeria__headimg--fluid" src="../imagenes/pag-galeria/galeria3.webp" alt="rollo fotografico">
-	</header>
-
 	<main>
-		<div class="title__container">
-		   <h1 class="container__text--color">GALERIA</h1>
-	    </div>
+		   <h1 class="title__galeria">GALERIA</h1>
+		   <span class="linea"></span>
+		   <div class="galery">
+			<a title="auto marca Tesla" href="#image1">
+				<img src="../imagenes/pag-galeria/electrico1.webp" alt="auto eléctrico marca tesla">
+			</a>
+			<a title="auto marca Mustang" href="#image2">
+				<img src="../imagenes/pag-galeria/electrico2.webp" alt="auto eléctrico marca Mustang">
+			</a>
+			<a title="auto marca Ford" href="#image3">
+				<img src="../imagenes/pag-galeria/electrico3.webp" alt="auto eléctrico marca Ford">
+			</a>
+			<a title="auto marca Bmw" href="#image4">
+				<img src="../imagenes/pag-galeria/electrico4.webp" alt="auto eléctrico marca Bmw">
+			</a>
+			<a title="auto marca Porche" href="#image5">
+				<img src="../imagenes/pag-galeria/electrico5.webp" alt="auto eléctrico marca Porche">
+			</a>
+			<a title="auto marca Lamborghini" href="#image6">
+				<img src="../imagenes/pag-galeria/electrico6.webp" alt="auto eléctrico marca Lamborghini">
+			</a>				
+			</div>	 
+			
+			<article class="light-box" id="image1">
+				<a title="auto marca Lamborghini" href="#image6" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+				<img src="../imagenes/pag-galeria/electrico1.webp" alt="">
+				<a title="auto marca Mustang" href="#image2" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+				<a href="#" class="close">X</a>
+			</article>
 
-		<!--comienza el carrucel-->
+			<article class="light-box" id="image2">
+				<a title="auto marca Tesla" href="#image1" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+				<img src="../imagenes/pag-galeria/electrico2.webp" alt="">
+				<a title="auto marca Ford" href="#image3" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+				<a href="#" class="close">X</a>
+			</article>
 
-		   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-	<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-	<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-	<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="../imagenes/pag-galeria/electrico1.webp" class="d-block w-100" alt="automovil eléctrico marca tesla">
-    </div>
-    <div class="carousel-item">
-      <img src="../imagenes/pag-galeria/electrico2.webp" class="d-block w-100" alt="automovil eléctrico marca mustang">
-    </div>
-    <div class="carousel-item">
-      <img src="../imagenes/pag-galeria/electrico3.webp" class="d-block w-100" alt="automovil eléctrico marca ford">
-    </div>
-	<div class="carousel-item">
-		<img src="../imagenes/pag-galeria/electrico4.webp" class="d-block w-100" alt="automovil eléctrico marca bmw">
-	  </div>
-	  <div class="carousel-item">
-		<img src="../imagenes/pag-galeria/electrico5.webp" class="d-block w-100" alt="automovil eléctrico marca porche">
-	  </div>
-	  <div class="carousel-item">
-		<img src="../imagenes/pag-galeria/electrico6.webp" class="d-block w-100" alt="automovil eléctrico marca lamborghini">
-	  </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+			<article class="light-box" id="image3">
+				<a title="auto marca Mustang" href="#image2" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+				<img src="../imagenes/pag-galeria/electrico3.webp" alt="">
+				<a title="auto marca Bmw" href="#image4" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+				<a href="#" class="close">X</a>
+			</article>
 
-		   <!--termina el carrucel-->
+			<article class="light-box" id="image4">
+				<a title="auto marca Ford" href="#image3" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+				<img src="../imagenes/pag-galeria/electrico4.webp" alt="">
+				<a title="auto marca Porche" href="#image5" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+				<a href="#" class="close">X</a>
+			</article>
+
+			<article class="light-box" id="image5">
+				<a title="auto marca Bmw" href="#image4" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+				<img src="../imagenes/pag-galeria/electrico5.webp" alt="">
+				<a title="auto marca Lamborghini" href="#image6" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+				<a href="#" class="close">X</a>
+			</article>
+
+			<article class="light-box" id="image6">
+				<a title="auto marca Porche" href="#image5" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+				<img src="../imagenes/pag-galeria/electrico6.webp" alt="">
+				<a title="auto marca Tesla" href="#image1" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+				<a href="#" class="close">X</a>
+			</article>
+	    
 	</main>
 	<footer class="foot">
 		<a href="https://www.facebook.com" rel="noopener" target="_blank">
